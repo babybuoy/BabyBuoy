@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">183364199031-cllqp04hf0jrv7t31gv7353o6sg459fp.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://babybuoy.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">183364199031</string>
+    <string name="google_api_key" translatable="false">AIzaSyCjLn4hd_cf7oxeeKBdzK6bM70z2UmaA5Q</string>
+    <string name="google_app_id" translatable="false">1:183364199031:android:7f5d02d6e7ee5c52</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCjLn4hd_cf7oxeeKBdzK6bM70z2UmaA5Q</string>
+    <string name="google_storage_bucket" translatable="false">babybuoy.appspot.com</string>
+    <string name="project_id" translatable="false">babybuoy</string>
+</resources>
