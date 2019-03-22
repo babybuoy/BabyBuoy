@@ -139,8 +139,10 @@ void setup()
     Firebase.set("Temperature",0);
     Firebase.set("PIR_SENSOR",0);
     Firebase.set("Accelerometer",0);
-    Firebase.set("Date",0);
-    Firebase.set("Time",0);
+    Firebase.set("Date_PIR",0);
+    Firebase.set("Time_PIR",0);
+    Firebase.set("Date_Accel",0);
+    Firebase.set("Time_Accel",0);
 
   
   Serial.println("Sensors booting up...");
@@ -196,12 +198,12 @@ void loop()
     dayStamp = formattedDate.substring(0, splitT);
     Serial.print("DATE: ");
     Serial.println(dayStamp);
-    Firebase.set("Date",dayStamp);
+    Firebase.set("Date_PIR",dayStamp);
     // Extract time
     timeStamp = formattedDate.substring(splitT+1, formattedDate.length()-1);
     Serial.print("HOUR: ");
     Serial.println(timeStamp);
-    Firebase.set("Date",dtimeStamp);
+    Firebase.set("Time_PIR",dtimeStamp);
     delay(1000);
   }
   else // No motion is detected
@@ -227,12 +229,12 @@ void loop()
     dayStamp = formattedDate.substring(0, splitT);
     Serial.print("DATE: ");
     Serial.println(dayStamp);
-    Firebase.set("Date",dayStamp);
+    Firebase.set("Date_Accel",dayStamp);
     // Extract time
     timeStamp = formattedDate.substring(splitT+1, formattedDate.length()-1);
     Serial.print("HOUR: ");
     Serial.println(timeStamp);
-    Firebase.set("Date",dtimeStamp);
+    Firebase.set("Time_Accel",dtimeStamp);
     delay(1000);
 
     //************* ADD CODE FOR TAKING PICTURE/VIDEO TO WEB **************//
@@ -252,12 +254,12 @@ void loop()
     dayStamp = formattedDate.substring(0, splitT);
     Serial.print("DATE: ");
     Serial.println(dayStamp);
-    Firebase.set("Date",dayStamp);
+    Firebase.set("Date_Accel",dayStamp);
     // Extract time
     timeStamp = formattedDate.substring(splitT+1, formattedDate.length()-1);
     Serial.print("HOUR: ");
     Serial.println(timeStamp);
-    Firebase.set("Date",dtimeStamp);
+    Firebase.set("Time_Accel",dtimeStamp);
     delay(1000);
     
     //************* ADD CODE FOR TAKING PICTURE/VIDEO TO WEB *************//
