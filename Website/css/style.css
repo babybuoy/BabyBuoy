@@ -105,18 +105,6 @@ img {
 }
 
 
-/* Sidebar */
-aside#sidebar{
-  float:right;
-  width:30%;
-  margin-top:10px;
-}
-
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-  width:90%;
-  padding:5px;
-}
-
 /* Main-col */
 article#main-col{
   float:left;
@@ -172,4 +160,31 @@ footer{
     width:100%;
     margin-bottom:5px;
   }
+  /*hyper link buttons*/
+  document-links {
+	list-style-type:none;
+	margin-top: 0px;
+	text-align: center;
+	padding-left: 0px;
+  }
+  
+  .button {
+	background-color: #29abe2; 
+	border: none;
+	color: white;
+	padding: 10px 22px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px; 
+	border: #29abe2; 
+	border-radius: 50px;
+	display: block;
+	
+  }
+  
+  .button:hover {
+	background-color: #2595c3;
+	}
+  
 }
