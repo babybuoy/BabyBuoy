@@ -10,7 +10,8 @@ body{
   width:80%;
   margin:auto;
   overflow:hidden;
-}
+  
+}*/
 
 ul{
   margin:20px;
@@ -115,9 +116,11 @@ article#main-col{
 ul#services li{
   list-style: none;
   padding:20px;
-  border: #cccccc solid 1px;
   margin-bottom:5px;
   background:#e6e6e6;
+  text-align: center;
+  margin-left: 225px;
+  width: 50%;
 }
 
 footer{
