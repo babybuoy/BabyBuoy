@@ -3,9 +3,9 @@
 
 // Program header files
 #include <Wire.h>
-//#include <WiFi.h>
-//#include <WebServer.h>
-//#include <ArduCAM.h>
+#include <WiFi.h>
+#include <WebServer.h>
+#include <ArduCAM.h>
 #include <SPI.h>
 #include <FirebaseArduino.h>
 #include "memorysaver.h"
@@ -17,7 +17,7 @@
 #include <WiFiUdp.h>
 
 //Define NTP Client to get time 
-WiFiYDP ntpUDP;
+WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP);
 
 //Variables to save date and time 
